@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: #4AB19A;
+    margin: 2vw 10vw 0;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #4AB19A;
+}
+
+p {
+    color: #4AB19A;
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin: 0px 0px 6rem;
+}
+
+*{transition:all 0.3s ease-in-out;}
+
+nav{
+    float:right;
+    color: #4AB19A;
+    margin: 2vw 10vw 0;
+}
+
+ul li{
+   display: inline-block;
+   padding:10px;
+   font-size: 1.7vw;
+   font-family:raleway;
+}
+
+ul li:hover{
+  color:black;
+  
+}
+
+.cloud-img1 {
+    position: relative;
+    margin-top: -2vw;
+    top: 4vw;
+    left: 25vw;
+}
+
+.cloud-img2 {
+    position: absolute;
+    top: 12vw;
+    left: 15vw;
+}
+
+.logo img{
+    border-radius: 50%;
+    float:left;
+    margin: 2.5vw 15vw 0;
+    width: 7vw;    
+}
+
+.name-section {
+    background-color: #E0EBE8;
+    position: relative;
+}
+
+.navigation-section {
+    background-color: #E0EBE8;
+    clear:both;
+    overflow:auto;
+    /* height: 90px; */
+}
+
