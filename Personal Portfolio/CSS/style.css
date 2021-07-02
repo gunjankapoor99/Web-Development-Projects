@@ -3,9 +3,9 @@ body {
     margin: 0;
 }
 
-a {
-    color: #4AB19A;
-    margin: 2vw 10vw 0;
+a {   
+    color: #0d735d;
+    margin: 2vw 2vw 0;
     text-decoration: none;
 }
 
@@ -18,11 +18,8 @@ h1 {
     color: #4AB19A;
 }
 
-p {
+h2,h3 {
     color: #4AB19A;
-    font-weight: normal;
-    font-size: 1.3rem;
-    margin: 0px 0px 6rem;
 }
 
 *{transition:all 0.3s ease-in-out;}
@@ -33,7 +30,8 @@ nav{
     margin: 2vw 10vw 0;
 }
 
-ul li{
+ul li{  
+   color: #4AB19A;
    display: inline-block;
    padding:10px;
    font-size: 1.7vw;
@@ -65,6 +63,13 @@ ul li:hover{
     width: 7vw;    
 }
 
+.description {
+    color: #4AB19A;
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin: 0px 0px 6rem;
+}
+
 .name-section {
     background-color: #E0EBE8;
     position: relative;
@@ -74,6 +79,28 @@ ul li:hover{
     background-color: #E0EBE8;
     clear:both;
     overflow:auto;
-    /* height: 90px; */
 }
 
+.code-img {
+    width: 15vw;
+    border-radius: 50%;
+    /* float: left; */
+}
+
+.app-img {
+    width: 15vw;
+    border-radius: 50%;
+    /* float: right; */
+}
+
+.bottom-container {
+    margin: 5vw 0 0;
+    padding: 40px 0px 20px;
+    background-color: #4AB19A;
+}
+
+.contact-me, .skills,.profile p {
+    width: 30%;
+    margin: 0 auto 0;
+    line-height: 1.8;
+}
