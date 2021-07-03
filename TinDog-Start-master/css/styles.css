@@ -83,7 +83,6 @@ h1 {
 }
 
 #testimonials {
-    padding: 7% 13%;
     text-align: center;
     background-color: #ef8172;
     color: white;
@@ -102,6 +101,10 @@ h1 {
     margin: 1.5rem;
 }
 
+.carousel-item {
+    padding: 7% 14%;
+}
+
 #press {
     padding-bottom: 3%;
     text-align: center;
@@ -112,3 +115,4 @@ h1 {
     width: 15%;
     margin: 20px 20px 50px;
 }
+
