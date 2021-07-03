@@ -10,11 +10,11 @@ h1 {
 }
 
 .container-fluid {
-    padding: 2% 12% 0% 12%;
+    padding: 3% 15% 8%;
 }
 
 .navbar {
-    padding: 0 0 4rem;
+    padding: 0 0 3rem;
 }
 
 .navbar-brand {
@@ -37,21 +37,20 @@ h1 {
 }
 
 .row img {
-    width: 75%;
+    width: 65%;
     transform: rotate(25deg);
-    overflow:hidden;
+    position: absolute;
+    right: 30%;
+    /* overflow:hidden; */
 }
 
-.row i{
+i{
     padding-right: 0.5vw;
 }
 
 #title {
-    padding: 0 5%;
     color: white;
     background-color: #ff4c68;
-    /* height: 40vw; */
-    overflow:hidden;
 }
 
 #features h3 {
@@ -74,7 +73,11 @@ h1 {
 }
 
 #features {
-    padding: 7% 13%;
+    position: relative;
+    /* we can apply or remove the z-index */
+    z-index: 1;
+    background-color: white;
+    padding: 7% 14%;
     z-index: 200;
 }
 
@@ -103,7 +106,7 @@ h1 {
 }
 
 .carousel-item {
-    padding: 7% 14%;
+    padding: 7% 16%;
 }
 
 #press {
@@ -139,7 +142,8 @@ h1 {
 #cta {
     background-color: #ff4c68;
     text-align: center;
-    padding: 5rem 0 5rem;
+    /* padding: 6rem 12rem 6rem; */
+    padding: 7% 16%;
 }
 
 #cta h3{
@@ -150,7 +154,7 @@ h1 {
 
 #footer {
     text-align: center;
-    padding: 0.5rem 0.5rem 0;
+    padding: 7% 16%;
 }
 
 #footer i {
@@ -159,4 +163,16 @@ h1 {
 
 #footer p {
     font-size: 1vw;
+}
+
+@media (max-width: 1100px) {
+    .row img {
+        position: static;
+        transform: rotate(0);
+        margin-top: 3rem;
+        width: 70%;
+    }
+    #title {
+        text-align: center;
+    }
 }
