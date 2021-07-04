@@ -1,5 +1,5 @@
-body {   
-    /* font-family: 'Montserrat', sans-serif; */
+body {
+    text-align: center;
 }
 
 h1 {
@@ -9,9 +9,25 @@ h1 {
     padding: 2vw 0 0;
 }
 
-.container-fluid {
-    padding: 3% 15% 8%;
+#title .container-fluid {
+    text-align: left;
+    padding: 3% 15% 7%;
 }
+
+.container-fluid {
+    padding: 7% 16%;
+}
+
+.colored-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section {
+    background-color: white;
+}
+
+/* Nav Section */
 
 .navbar {
     padding: 0 0 3rem;
@@ -48,10 +64,7 @@ i{
     padding-right: 0.5vw;
 }
 
-#title {
-    color: white;
-    background-color: #ff4c68;
-}
+/* Features Section */
 
 #features h3 {
     font-family: 'Montserrat';
@@ -76,20 +89,17 @@ i{
     position: relative;
     /* we can apply or remove the z-index */
     z-index: 1;
-    background-color: white;
-    padding: 7% 14%;
     z-index: 200;
 }
 
 .feature-box {
-    text-align: center;
     padding: 4% !important;
 }
 
+/* Testimonials Section */
+
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
-    color: white;
 }
 
 #testimonials h2 {
@@ -105,13 +115,10 @@ i{
     margin: 1.5rem;
 }
 
-.carousel-item {
-    padding: 7% 16%;
-}
+/* Press Section */
 
 #press {
     padding-bottom: 3%;
-    text-align: center;
     background-color: #ef8172;
 }
 
@@ -120,14 +127,14 @@ i{
     margin: 20px 20px 50px;
 }
 
+/* Pricing Section */
+
 #pricing {
     padding: 10%;
-    text-align: center;
 }
 
 .pricing-column {
     padding: 3% 2%;
-    text-align: center;
 }
 
 .pricing-column p {
@@ -139,12 +146,7 @@ i{
     font-weight: bold;
 }
 
-#cta {
-    background-color: #ff4c68;
-    text-align: center;
-    /* padding: 6rem 12rem 6rem; */
-    padding: 7% 16%;
-}
+/* CTA Section */
 
 #cta h3{
     font-family: 'Montserrat';
@@ -152,10 +154,7 @@ i{
     font-size: 2.5rem;
 }
 
-#footer {
-    text-align: center;
-    padding: 7% 16%;
-}
+/* Footer Section */
 
 #footer i {
     padding: 0 0.5rem;
