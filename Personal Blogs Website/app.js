@@ -48,6 +48,7 @@ app.get("/posts/:postName", function(req,res){
     const storedTitle = _.lowerCase(post.title);
     if(storedTitle === requestedTitle){
        console.log("Match Found");
+       res.render("post",{postName:post.title,postContent:post.content});
     }
   }); 
 });
