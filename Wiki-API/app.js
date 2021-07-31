@@ -33,6 +33,8 @@ const Article = mongoose.model("Article", articleSchema);
 // app.delete("/articles", );
 
 
+// Requests targetting all articles
+
 // Chaining route handlers
 app.route("/articles")
 .get(
@@ -72,6 +74,32 @@ app.route("/articles")
         });
     }
 );
+
+// Requests targetting a specific article
+
+// Get a specific article
+app.route("/articles/:articleTitle")
+.get(function(req,res){
+    Article.findOne({title: req.params.articleTitle}, function(err, foundArticle){
+        if(foundArticle){
+            res.send(foundArticle);
+        }else{
+            res.send("No articles matching that title was found.")
+        }
+    });
+})
+.put(function(req,res){
+    Article.update(
+        {title: req.params.articleTitle},
+        {title: req.body.title, content: req.body.content},
+        {overwrite: true},
+        function(err){
+            if(!err){
+                res.send("Successfully updated article.");
+            }
+        }
+    )
+});
 
 
 app.listen(3000, function() {
