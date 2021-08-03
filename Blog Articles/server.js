@@ -6,12 +6,12 @@ const articleRouter = require("./routes/articles");
 
 const app = express();
 
+mongoose.connect("mongodb://localhost/blogArticle", {useNewUrlParser: true, useUnifiedTopology: true });
+
 app.set("view engine", "ejs");
 
-// "/articles" is the relative path to the article routes
-app.use("/articles", articleRouter);
-
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
+// app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
     const articles = [{
@@ -19,8 +19,11 @@ app.get("/", function(req, res){
         createdAt: new Date(),
         description: "Test Description"
     }]
-    res.render("index", {articles: articles});
-})
+    res.render("articles/index", {articles: articles});
+});
+
+// "/articles" is the relative path to the article routes
+app.use("/articles", articleRouter);
 
 app.listen(3000, function(){
     console.log("Server is listening at port 3000!");
