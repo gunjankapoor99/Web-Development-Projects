@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    {{>header}}
+    {{>navbar}}
+
+    <div class="flexhead" style=" background-color: rgb(218, 238, 241);">
+        <div>
+            <img width="70" height="70" src="media/logo1.png" alt="IIT Madras LOGO">
+        </div>
+        <div class="divhead">
+            <h5>IIT MADRAS</h5>
+            <p>Indian Instite Of Technology Madras</p>
+        </div>
+        <div class="divQuickLinks">
+            <a href="#about">About</a>
+            <a href="#courses">CourseAvailable</a>
+            <a href="#director">DirectorWord</a>
+            <a href="/admissionForm">AdmissionForm</a>
+            <a href="/register">Register</a>
+            <a href="/login">LogIn</a>
+        </div>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="media/background.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="media/library.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 " src="media/ground.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="about">
+        <h2>About</h2>
+        <p>The Indian Institute of Technology Madras is known both nationally and internationally for excellence in
+            technical education, basic and applied research, innovation, entrepreneurship and industrial consultancy. A
+            faculty of international repute, a highly motivated and brilliant student community, excellent technical and
+            supporting staff and an effective administration have all contributed to the pre-eminent status of IIT
+            Madras. The Institute is proud to bear the laureate of being No.1 engineering university in India. More
+            recently, IIT Madras has been given the title of Institute of Eminence. IIT Madras is a residential
+            institute with nearly 550 faculty, 8000 students and 1250 administrative & supporting staff and is a
+            self-contained campus located in a beautiful wooded land of about 250 hectares.
+            The campus is located in the city of Chennai, previously known as Madras. Chennai is the state capital of
+            Tamilnadu, a southern state in India. The Institute has sixteen academic departments and a few advanced
+            research centres in various disciplines of engineering and pure sciences, with nearly 100 laboratories
+            organised in a unique pattern. IIT Madras has been the top-ranked engineering institute in India for four
+            consecutive years as well as the ‘Best Educational Institution’ in Overall Category in the NIRF Rankings of
+            2019 put out by the Ministry of Human Resource Development.
+        </p>
+
+    </div>
+    <div id="video" style="position: relative; height:auto;text-align: center; overflow: hidden;z-index: 0;">
+        <video autoplay loop muted preload="metadata"
+            style="max-width: 100%;width: 100%; height: auto; position: relative;z-index: 0;"
+            src="https://www.alverno.edu/images/homevideo.mp4"></video>
+        <div style="position: absolute; z-index: 1;top: 0;left: 0; bottom: 0;right: 0; margin-top: 20vw;">
+            <h1 style="color: white; font-size: 6vw;">Get Ready</h1>
+            <h2 style="color: white; font-size: 5vw;">To discover IIT Madras</h2>
+        </div>
+
+        <div class="graduateProgram">
+
+            <div class="animateIcons">
+                <div style="background-color: rgb(213, 104, 202);">
+                    <img src="media/icon_undergraduate.png">
+                </div>
+                <div class="animateIconsHead">
+                    <b>UNDERGRADUATE PROGRAMS</b></div>
+            </div>
+            <div class="animateIcons">
+                <div
+                    style="background-color: rgb(104, 207, 213);">
+                    <img src="media/icon_graduate.png">
+                </div>
+                <div class="animateIconsHead">
+                    <b>GRADUATE PROGRAMS</b></div>
+            </div>
+            <div class="animateIcons">
+                <div
+                    style="background-color: rgb(104, 213, 108);">
+                    <img src="media/icon_transfer.png">
+                </div>
+                <div class="animateIconsHead">
+                    <b>TRANSFER TO IIT Madras</b></div>
+            </div>
+            <div class="animateIcons">
+                <div
+                    style="background-color: rgb(231, 149, 85);">
+                    <img src="media/icon_financial.png">
+                </div>
+                <div class="animateIconsHead">
+                    <b>FINANCIAL AID</b></div>
+            </div>
+            <div class="animateIcons">
+                <div style="background-color: rgb(83, 121, 209);">
+                    <img src="media/icon_visit.png">
+                </div>
+                <div class="animateIconsHead">
+                    <b>VISIT IIT Madras</b></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="verticalLineDiv">
+        <div class="verticalLine"></div>
+    </div>
+    <div id="courses">
+        <div style="width: 50%; margin: auto;">
+            <h2 class="majorsandPrograms">EXPLORE OUR 30+
+                MAJORS & PROGRAMS</h2>
+        </div>
+
+        <div class="card-group">
+            <div class="card card1">
+                <img class="card-img-top cardImg1" src="media/undergraduation.jpg" alt="Card image cap">
+                <div class="slideUp"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Undergraduate Programs</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="hide">Learn More</div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top cardImg2" src="media/graduationprogram.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Graduate Programs</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.This content is a little bit longer</p>
+                    <div class="hide">Learn More</div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top cardImg3" src="media/adultlearning.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Adult Learning & Degree Completion</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional </p>
+                    <div class="hide">Learn More</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="verticalLineDiv">
+        <div class="verticalLine"></div>
+    </div>
+
+    <div class="iitStrongHead">
+        <h2>IIT Madras Strong</h2>
+    </div>
+    <div class="mainIITStrong">
+        <div class="iitStrongDiv">
+            <img src="media/Value.svg">
+            <div class="strongPoints">
+                <p>BEST</p>
+                <p><b>VALUE</b></p>
+                <p>SCHOOL</p>
+            </div>
+        </div>
+        <div class="verticalLineDiv">
+            <div class="verticalLineStrong"></div>
+        </div>
+        <div class="iitStrongDiv">
+            <img src="media/Teaching.svg">
+            <div class="strongPoints">
+                <p>11 YEARS</p>
+                <p><b>STRONG COMMITMENT</b></p>
+                <p>TO TEACHING</p>
+            </div>
+        </div>
+        <div class="verticalLineDiv">
+            <div class="verticalLineStrong"></div>
+        </div>
+        <div class="iitStrongDiv">
+            <img src="media/Inspirational Lightbulb.svg">
+            <div class="strongPoints">
+                <p>MOST</p>
+                <p><b>INSPIRATIONAL</b></p>
+                <p>SCHOOL</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="parentOfBagroundImage">
+        <div class="backgroundImage" style="background-image: url('media/background.jpeg'); width: 100%; height: 35vw; background-position: center;padding-top: 4.6vw;border:1px solid darkmagenta; display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover"></div>
+
+        <h6 style=" font-size: 3vw; color: darkmagenta;padding-top: 4vw; text-align: center; ">IIT
+            Madras by the Numbers</h6>
+        <div class="flexnumbers" style="margin-left: 5vw;">
+            <div>
+                <p><b>2,105</b></p>
+                <p>Undergraduate Students</p>
+            </div>
+            <div>
+                <p><b>4120</b></p>
+                <p> Postgraduate Students</p>
+            </div>
+            <div>
+                <p><b>746</b></p>
+                <p> MS Research Scholars</p>
+            </div>
+            <div>
+                <p><b>2,963</b></p>
+                <p>PhD Research Scholars</p>
+            </div>
+            <div>
+                <p><b>591</b></p>
+                <p>Faculty</p>
+            </div>
+            <div>
+                <p><b>677</b></p>
+                <p>Staff</p>
+            </div>
+            <div>
+                <p><b>146</b></p>
+                <p>Patents</p>
+            </div>
+            <div>
+                <p><b>829</b></p>
+                <p>Projects</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexdirector" id="director">
+        <div class="divdirectorimage" style="width: fit-content;">
+            <img src="media/director.jpg">
+        </div>
+        <div class="divdirectorwords">
+            <h2>Message from the Director</h2><br>
+            <p style=" font-size: 1rem;">Welcome to the portal of IIT Madras! We recently celebrated our Diamond
+                Jubilee, but remain as young at heart as ever. As the#1 ranked Institute in NIRF five years in a row, we
+                remain steadfast in our commitment to excellence and growth in every facet – UG and PG degree programs,
+                M.S. and PhD research programs, technology development for industry and national needs, startups,
+                international partnerships, online education and outreach, and a vibrant campus life rich in cultural,
+                sports and myriad other activities. Throw in the nation’s first and largest IITM Research Park next door
+                with an incredible deep technology startup ecosystem, excellent campus infrastructure, generous alumni
+                support and involvement, and a fast-expanding engagement with the best of our peers globally, and you
+                have an Institute that everyone wishes to be a student, employee, alumnus, or partner of. Welcome, once
+                again, to IIT Madras! Vanakkam!!</p>
+            <p style="color: crimson; "><b>Bhaskar Ramamurthi</b></p>
+        </div>
+    </div>   
+
+    <div class="float-container">
+        <div style="margin-bottom: 2vw;">
+            <h4 style="display: inline;">Campus Life</h4>
+            <a href="" style="float: right; font-size: 1rem; margin-right: 5vw;">About Life On Campus</a>
+        </div>
+        <div style="display: inline-block;">
+            <div class="float-child" style="display: inline-block;">
+                <img src="../media/campus1.jpeg" style="height: 25vw; width: 47.3vw;">
+            </div>
+            <div class="flexcampuslife">
+                <img src="media/campus2.jpeg"><img src="media/campus3.jpeg">
+                <img src="media/campus4.jpeg"><img src="media/campus5.jpeg">
+            </div>
+        </div>
+        <p>IIT Madras is a vibrant residential campus that allows students to flourish both personally and
+            professionally. Campus life at IIT Madras is not just about classrooms, libraries and labs. There are
+            several opportunities for students to pursue their favorite activities, refine their skills and discover
+            new talents and interests. The campus is a constant buzz of varied activities and events - academic,
+            co-curricular and extracurricular.</p>
+    </div>
+    
+
+    <div class="alllinks">
+        <div class="mainallLinksCard">
+            <div class="allLinksCard">
+                <img src="media/cardlinksImg.png" class="cardlinksImg">
+            </div>
+            <div class="socialmediacontacts">
+                <a href="https://www.facebook.com/"><img src="media/facebook.png"></a>
+                <a href="https://www.instagram.com/"><img src="media/instagram.png"></a>
+                <a href="https://www.twitter.com"><img src="media/twitter.png"></a>
+                <a href="https://www.linkedin.com"><img src="media/linkedin.png"></a>
+                <a href="https://www.vimeo.com"><img src="media/vimeo.png"></a>
+            </div>
+        </div>
+        <div class="flexIndexes">
+            <div>
+                <a>3400 S. 43rd St.
+                    Milwaukee, WI 53234
+                    414-382-6000
+                    admissions@alverno.edu</a>
+                <a>Campus Map</a>
+                <a>Contact us</a>
+            </div>
+            <div>
+                <a>Career</a>
+                <a>Event Spaces</a>
+                <a>Trustees</a>
+                <a>Early Learning Centers</a>
+                <a>Privacy Policy</a>
+            </div>
+            <div>
+                <a>Faculty & Staff</a>
+                <a>Admissions Policies</a>
+                <a>Accreditation</a>
+                <a>Learning Outcomes</a>
+                <a>Harassment/Discrimination Policy</a>
+            </div>
+        </div>
+    </div>
+   
+   {{>footer}}
