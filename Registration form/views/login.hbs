@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
-    <div style="text-align: center;padding: 2.5vw;">
-        <h5>WELCOME</h5><br>
-            <input placeholder="Candidate Email Address " type="email" style="margin-bottom: 0.6vw;width: 30vw; border-radius: 0.3vw;" required><br>
-            <input placeholder="Enter Password " type="password" style="margin-bottom: 0.6vw;width: 30vw; border-radius: 0.3vw;" required><br>
-            <a style="text-align:right;">Forgot Password?</a><br><br>
-           <button type="submit" style="text-align: center; background-color: lightcoral;">LogIn</button>
-        </div>
+<div class="cont">
+  <form action="/login" method="POST">
+  <div class="form sign-in">
+    <h2>Welcome back,</h2>
+    <label>
+      <span>Email</span>
+      <input type="email" name="email" />
+    </label>
+    <label>
+      <span>Password</span>
+      <input type="password" name="password" />
+    </label>
+    <p class="forgot-pass">Forgot password?</p>
+    <button type="button" class="submit">Sign In</button>
+    <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+  </div>
+</form>
+</div>
+<script src="../signup.js"></script>
 </body>
 </html>
