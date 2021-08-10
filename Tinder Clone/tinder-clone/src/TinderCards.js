@@ -1,19 +1,49 @@
 import React, { useState } from 'react';
+import TinderCard from 'react-tinder-card'
 import "./tinderCards.css";
 
 function TinderCards() {
+    
+// eslint-disable-next-line
     const [people, setPeople] = useState([
         {
             name: "Elon Musk",
-            url: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F85%2FElon_Musk_Royal_Society_%2528crop1%2529.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FElon_Musk&tbnid=zY4uP_4PDKQQGM&vet=12ahUKEwjw8Jju_KTyAhVPYysKHcePBaEQMygZegUIARDfAQ..i&docid=cElLiMk8T9O8LM&w=480&h=720&q=elon%20musk%20picture%20link&ved=2ahUKEwjw8Jju_KTyAhVPYysKHcePBaEQMygZegUIARDfAQ"
+            url: "https://i.pinimg.com/originals/00/09/f4/0009f44897c3d9f6eb740dea9ec11022.png"
+        },
+        {
+            name: "Jeff Bezos",
+            url: "https://www.macitynet.it/wp-content/uploads/2017/11/jeff-bezos.jpg"
         }
     ]);
 
+    const swipped = (direction, nameToDelete) => {
+        console.log("removing: " + nameToDelete);
+    };
+
+    const outOfFrame = (name) => {
+        console.log(name + "left the screen!");
+    }
+
     return (
         <div className="tinderCards">
+            <div className="tinderCards__cardContainer">
             {people.map((person) => (
-                <h1>{person.name}</h1>
+                <TinderCard
+                    className="swipe"
+                    key={person.name}
+                    preventSwipe={["up","down"]}
+                    onSwipe={(dir) => swipped(dir, person.name)}
+                    onCardLeftScreen={() => outOfFrame(person.name)}
+                >
+                    <div
+                     style={{backgroundImage: `url(${person.url})`}}
+                     className="card"
+                    >
+                     <h3>{person.name}</h3>
+                    </div>
+                </TinderCard>
             ))}
+            </div>
         </div>
     )
 }
