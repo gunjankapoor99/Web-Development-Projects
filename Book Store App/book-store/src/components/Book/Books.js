@@ -19,9 +19,9 @@ const Books = () => {
     return <div>
         <ul>
             {books && books.map((book,i) => (
-                <div className='Book' key={i}>
+                <li className='Book' key={i}>
                     <Book book={book} />
-                </div>
+                </li>
             ))}
         </ul>
     </div>

@@ -26,6 +26,3 @@ mongoose.connect('mongodb+srv://admin:absdfgrtywvhv43vhvs@cluster0.oiqzr.mongodb
 });
 
 console.log("Hello World!");
-
-// absdfgrtywvhv43vhvs
-// mongodb+srv://admin:<password>@cluster0.oiqzr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
